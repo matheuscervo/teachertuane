@@ -22,26 +22,30 @@
 
     <!-- Link for JavaScript-->
     <script src='main.js'></script>
+
+    <!-- Link for favicon-->
+    <link rel="icon" href="./images/favicon-logo.png" type="image/icon type">
 </head>
 
 
 <body>
+    
     <!-- Navbar -->
     <nav class="nav">
         <div class="container-70vw">
             <a href="./index.html">
-                <img src="./images/Logotipo.svg" id="logotipo" />
+                <img src="./images/Ativo 13@4x.png" id="logotipo" />
             </a>
             <ul class="nav-links">
                 <li><a href="#">Minha Trajetória</a></li>
-                <li><a href="#">Cursos</a></li>
+                <li><a onClick="document.getElementById('courses-section').scrollIntoView()">Cursos</a></li>
                 <li><a href="#">Contato</a></li>
             </ul>
             <div>
                 <ul class="nav-social-icons">
-                    <li><a class="linkedin" href="https://www.linkedin.com/company/teachertuane/about/"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a class="facebook" href="https://www.facebook.com/teacherTuane"><i class="fa fa-facebook"></i></a></li>
-                    <li><a class="dribbble" href="https://www.instagram.com/tuanetainbessi/"><i class="fa fa-instagram"></i></a></li>   
+                    <li><a class="linkedin" href="https://www.linkedin.com/company/teachertuane/about/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a class="facebook" href="https://www.facebook.com/teacherTuane"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a class="dribbble" href="https://www.instagram.com/tuanetainbessi/"><i class="fa-brands fa-instagram"></i></a></li>   
                 </ul>
             </div>
         </div>
@@ -49,6 +53,7 @@
 
     <!-- Banner of the course -->
     <img id="desinibition-banner" src="./images/curso-desinibição-banner_Prancheta 1.jpg">
+    <img id="desinibition-banner-mobile" src="./images/curso-desinibição-thumb.jpg">
 
     <!-- Principal description of the course -->
     <div class="course-description">
@@ -71,8 +76,8 @@
                 <button class="btn btn-blackline">fale comigo</button>
             </div>
         </div>
-        <div>
-            <img class="course-description-image" src="./images/curso-desinibição-imagem-de-apoio.jpg">
+        <div class="course-description-image">
+            <img  src="./images/curso-desinibição-imagem-de-apoio.jpg">
         </div>
     </div>
 
@@ -95,7 +100,7 @@
         <img src="./images/curso-desinibição-imagem-de-apoio-2.jpg">
         <div class="course-aditional-info-text">
             <h2>
-                Mas qual a diferença entre<br>
+                Mas qual a diferença entre
                 ser extrovertido e a <span>desinibição</span>?
             </h2>
             <p>Na verdade, a maioria das pessoas acredita que desinibido e extrovertido são a mesma coisa, mas não são. As técnicas de desinibição te ajudam não somente a falar com as pessoas aleatoriamente, isso é um traço de personalidade.<br><br>
@@ -157,15 +162,17 @@
         <div class="container-70vw">
             <p class="small-phrase-title">saibas as opções de pagamento</p>
             <h2>Quanto custa para participar?</h2>
+            
             <div class="panel pricing-table">
-            <!-- First Price Option -->
+            
+                <!-- First Price Option -->
             <div class="pricing-plan">
                 <i class="fa-solid fa-piggy-bank"></i>
                 <h2 class="pricing-header">Pague à Vista</h2>
-                <ul class="pricing-features">
-                    <li class="pricing-features-item">pague à vista e não tenha juros</li>
-                    <li class="pricing-features-item">quem é alune particular ganha desconto</li>
-                </ul>
+                <div class="pricing-features">
+                    <p class="pricing-features-item">pague à vista e não tenha juros</li>
+                    <p class="pricing-features-item">quem é alune particular<br>ganha desconto</li>
+                </div>
                 <span class="pricing-price">R$ 650,00</span>
                 <a href="#/"><button class="btn btn-pink">Inscreva-se</button></a></a>
             </div>
@@ -174,10 +181,10 @@
             <div class="pricing-plan">
                 <i class="fa-solid fa-money-check-dollar"></i>
                 <h2 class="pricing-header">Pague Parcelado</h2>
-                <ul class="pricing-features">
-                    <li class="pricing-features-item">Escolha quantas parcelas quiser*</li>
-                    <li class="pricing-features-item">Caso não tenha cartão, existem outras formas de parcelar</li>
-                </ul>
+                <div class="pricing-features">
+                    <p class="pricing-features-item">Escolha quantas parcelas quiser*</li>
+                    <p class="pricing-features-item">Caso não tenha cartão, existem outras formas de parcelar</li>
+                </div>
                 <span class="pricing-price-2">parcele em até 12X</span>
                 <a href="#/"><button class="btn btn-blackline">Parcele Aqui</button></a></a>
             </div>
@@ -201,28 +208,10 @@
             </p>
             </div>
 
-            <div>
-            <h6>Categories</h6>
-            <ul class="footer-links">
-                <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
-                <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
-                <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
-                <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
-                <li><a href="http://scanfcode.com/category/android/">Android</a></li>
-                <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
-            </ul>
+            <div class="footer-info-logo">
+                <img src="./images/Ativo 13@4x.png" id="logotipo" />
             </div>
 
-            <div>
-            <h6>Quick Links</h6>
-            <ul class="footer-links">
-                <li><a href="http://scanfcode.com/about/">About Us</a></li>
-                <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
-                <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
-                <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
-                <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
-            </ul>
-            </div>
         
         <!-- HR for a separation -->
         </div>
@@ -234,15 +223,15 @@
             <div class="footer-second-row">
                 <div>
                 <p class="copyright-text">Copyright &copy; 2022 Todos os direitos reservados à  
-                    <a href="#">Teacher Tuane Co</a>.
+                    <a href="https://www.linkedin.com/company/teachertuane/about/">Teacher Tuane Co</a>.
                 </p>
                 </div>
 
                 <div>
                     <ul class="social-icons">
-                        <li><a class="linkedin" href="https://www.linkedin.com/company/teachertuane/about/"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a class="facebook" href="https://www.facebook.com/teacherTuane"><i class="fa fa-facebook"></i></a></li>
-                        <li><a class="dribbble" href="https://www.instagram.com/tuanetainbessi/"><i class="fa fa-instagram"></i></a></li>   
+                        <li><a class="linkedin" href="https://www.linkedin.com/company/teachertuane/about/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a class="facebook" href="https://www.facebook.com/teacherTuane"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a class="dribbble" href="https://www.instagram.com/tuanetainbessi/"><i class="fa-brands fa-instagram"></i></a></li> 
                     </ul>
                 </div>
             </div>

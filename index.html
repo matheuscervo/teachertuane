@@ -37,9 +37,9 @@
                 <img src="./images/Ativo 13@4x.png" id="logotipo" />
             </a>
             <ul class="nav-links">
-                <li><a href="#">Minha Trajetória</a></li>
-                <li><a onClick="document.getElementById('courses-section').scrollIntoView()">Cursos</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="./trajetoria.html">Minha Trajetória</a></li>
+                <li><a href="./cursos.html">Cursos</a></li>
+                <li><a href="./contato.html">Contato</a></li>
             </ul>
             <div>
                 <ul class="nav-social-icons">
@@ -63,8 +63,8 @@
                 E é com essa união que eu quero te ensinar a lingua inglesa. 
             </p>
             <div class="hero-section-buttons">
-                <button class="btn btn-green">comece agora</button>
-                <button class="btn btn-blackline">entre em contato</button>
+                <a class="btn btn-green" href="./cursos.html">meus cursos</a>
+                <a class="btn btn-blackline" href="./contato.html">entre em contato</a>
             </div>
         </div>
         <img id="hero-image" src="./images/hero-section-image.jpg" />
@@ -80,10 +80,9 @@
                 <small>sobre mim</small>
                 <h2>mais de dez anos<br>com experiência de ensino</h2>
                 <p>
-                    Tempore voluptatibus accusantium beatae et dolores quam.<br> 
-                    Perspiciatis provident eum minima enim aut.
+                    Há mais de dez anos, dou aula para crianças, adolescentes e adultos sobre lingua inglesa e atuação. Foi assim que criei meu método que quero te apresentar!
                 </p>
-                <button class="btn btn-pink">saiba mais</button>
+                <a class="btn btn-pink" href="./trajetoria.html">me conheça mais</a>
             </div>
         </div>
     </section>
@@ -124,6 +123,83 @@
         </div>
     </section>
 
+    <!-- Testimonials Section -->
+        <div class="testimonials-section">
+            <div class="container-70vw">
+                <small>testemunhos</small>
+                <h2>o que meus alunes dizem?</h2>
+
+                <!-- Testimonial 1 -->
+                <div class="testimonial-item testimonial-item-visible">
+                    <img src="./images/testimonials-matheus.png">
+                    <div>
+                        <p>
+                            "Tempore voluptatibus accusantium beatae et dolores quam.<br> 
+                            Perspiciatis provident eum minima enim aut."
+                        </p>
+                        <p>Matheus Cervo - Pesquisador em Comunicação e Desenvolvedor Web</p>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-item">
+                    <img src="./images/testimonials-matheus.png">
+                    <div>
+                        <p>
+                            "Tempore voluptatibus accusantium beatae et dolores quam.<br> 
+                            Perspiciatis provident eum minima enim aut."
+                        </p>
+                        <p>Matheus Cervo - Pesquisador em Comunicação e Desenvolvedor Web</p>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-item">
+                    <img src="./images/testimonials-matheus.png">
+                    <div>
+                        <p>
+                            "Tempore voluptatibus accusantium beatae et dolores quam. Perspiciatis provident eum minima enim aut."
+                        </p>
+                        <p>Matheus Cervo - Pesquisador em Comunicação e Desenvolvedor Web</p>
+                    </div>
+                </div>
+
+                <!-- Carousel Buttons -->
+                <div class="carousel-actions">
+                    <button id="carousel-button-prev" aria-label="Previous Slidex"><</button>
+                    <button id="carousel-button-next" aria-label="Next Slide">></button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Contact Section-->
+        <div class="contact">
+            <div class="container-70vw">
+                <h1>Entre em contato</h1>
+                <div class="contact-links">
+                    <div class="contact-links-description">
+                        <i class="fa-solid fa-message"></i>
+                        <p>Não precisa preencher formulário.<br>
+                        Fale comigo diretamente!</p>
+                    </div>
+                    <div class="contact-whatsapp">
+                        <a href="https://api.whatsapp.com/message/BU6CMFNJEJWYE1?autoload=1&app_absent=0">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <p>Entre em contato pelo Whatsapp</p>
+                        </a>
+                    </div>
+                    <hr>
+                    <div class="contact-linkedin">
+                        <a href="https://www.linkedin.com/in/gabituaneserialegal/">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <p>Entre em contato pelo Linkedin</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     <!-- Site footer -->
     <footer class="site-footer">
 
@@ -138,7 +214,7 @@
             </p>
             </div>
 
-            <div>
+            <div class="footer-info-logo">
                 <img src="./images/Ativo 13@4x.png" id="logotipo" />
             </div>
 
@@ -168,5 +244,6 @@
         </div>
     </footer>
 
+    <script src="index.js"></script>
 </body>
 </html>
